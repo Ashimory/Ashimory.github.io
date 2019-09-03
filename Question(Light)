@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2019/lightpolluti.jpg" alt="Light pollution">
+    <p>
+    <div>
+        <div class="question">1. What is light pollution ?</div>
+        <div class="choice" id="A" onclick="checkAnswer('A') ">A. light bulbs that are not properly disposed of</div>
+        <div class="choice" id="B" onclick="checkAnswer('B') ">B. excessive artificial light in the night environment</div>
+        <div class="choice" id="C" onclick="checkAnswer('C') ">C. outdoor lights that are left on all day, wasting electricity</div>
+    </div>
+    </p>
+    <p>
+    <div>
+        <div>
+            <div class="question">2. In recent years, which city has been considered to be most lighted-polluted compared to Global Urban Average ?</div>
+            <div class="choice" id="A" onclick="checkAnswer('A') ">A. Hongkong</div>
+            <div class="choice" id="B" onclick="checkAnswer('B') ">B. Saint Petrsburg</div>
+            <div class="choice" id="C" onclick="checkAnswer('C') ">C. New York</div>
+        </div>
+    </div>
+    </p>
+    <p>
+    <div>
+            <div>
+                <div class="question">3. The excess of nighttime light that comes with light pollution causes a disruption in our circadian rhythms. Which of the following best defines these rhythms ?</div>
+                <div class="choice" id="A" onclick="checkAnswer('A') ">A. the way our circulatory system responds to light</div>
+                <div class="choice" id="B" onclick="checkAnswer('B') ">B. our body's process of getting energy from sunligh</div>
+                <div class="choice" id="C" onclick="checkAnswer('C') ">C. our body's 24-hour biological cycle</div>
+            </div>
+        </div>
+    </p>
+
+    <p>
+     <div>
+        <div>
+            <div class="question">4. How many forms can glare occur? </div>
+            <div class="choice" id="A" onclick="checkAnswer('A') ">A. 3</div>
+            <div class="choice" id="B" onclick="checkAnswer('B') ">B. 4</div>
+            <div class="choice" id="C" onclick="checkAnswer('C') ">C. 5</div>
+        </div>
+    </div>
+    </p>
+
+    <div>
+        <div>
+            <div class="question">5. Which is NOT a good way to reduce the light pollution?</div>
+                <div class="choice" id="A" onclick="checkAnswer('A') ">A. Using high-energy bulbs </div>
+                <div class="choice" id="B" onclick="checkAnswer('B') ">B. Turn off lights which are unnecessary </div>
+                <div class="choice" id="C" onclick="checkAnswer('C') ">C. Using portable lighting  </div>
+            </div>
+    </div> 
+
+</body>
+</html>

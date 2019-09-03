@@ -1,0 +1,158 @@
+/* heading bar */
+html {
+    height: 100%;
+    width: 100%
+}
+
+#top_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(30, 168, 30);
+}
+
+.page_name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 2px green;
+    cursor: pointer;
+}
+
+.page_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    font-family: 'Arvo', serif;
+    background-color: green;
+    border: 2px solid rgb(30, 168, 30);
+}
+
+#dropdownMenuButton {
+    background-color: white;
+    color: rgba(155, 47, 47, 0.774);
+    padding: 4px 4px 6px 8px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px green;
+} 
+
+.stage_name {
+    color: white;
+}
+
+.account_manager {
+    color: white;
+    margin-right: 10px;
+}
+
+.account {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold
+}
+
+.dropdown {
+    margin-left: 10px;
+}
+
+.dropdown-menu {
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    color: rgba(155, 47, 47, 0.774);
+}
+
+.page_menu :any-link, .page_menu :visited {
+    color: white;
+    text-decoration: none;
+}
+
+.page_menu :hover, .page_menu :active {
+    color: green;
+    background-color: white;
+    border: 0px solid green;
+    padding: 1.2px 20px 1.5px;
+    box-shadow: 2px 2px 2px rgb(30, 168, 30);
+}
+
+.account_manager :any-link, .account_manager :visited {
+    color: white;
+    text-decoration: none;
+}
+
+.account_manager :hover, .account_manager :active {
+    color: white;
+    text-decoration: white underline;
+}
+
+/* slides */
+.carousel-item {
+    width: 100%;
+    height: 700px;
+    object-fit: contain;
+    object-position: fixed
+}
+
+.info {
+    font-size: 1rem;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 10px black;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.table_content {
+    size: cover;
+    border-collapse: collapse;
+    background-color: rgb(30, 168, 30);
+    color: white;
+}
+
+tr :nth-child(odd) {
+    background-color: green;
+}
+
+#table_heading {
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.table_heading_cell {
+    padding: 10px 0px;
+    font-size: 1rem;
+}
+
+.table_content_cell {
+    padding: 5px 5px;
+    font-size: 1rem;
+}
+
+.topic {
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px gray , 0px 0px 20px black;
+}
+.darken {
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      );
+}

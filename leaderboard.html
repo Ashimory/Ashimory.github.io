@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table style="width: 100%" id="table"></table>
+    <script>
+        var table = document.getElementById("table");
+    function addData(name,score) {
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = name;
+        cell2.innerHTML = score;
+    }
+    </script>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDPf1QE1Opc8UqdjUJnC_muxGf6Os6BJ6Q",
+    authDomain: "sign-up-7256a.firebaseapp.com",
+    databaseURL: "https://sign-up-7256a.firebaseio.com",
+    projectId: "sign-up-7256a",
+    storageBucket: "",
+    messagingSenderId: "715611964577",
+    appId: "1:715611964577:web:e42d76ce5c2a6820"
+  };
+  firebase.initializeApp(config);
+
+  firebase.database().ref('score').orderByChild("score").once("value", function(snapshot) {
+      snapshot.forEach(function (childSnapshot) {
+          var childData = childSnapshot.val();
+          console.log(childData);
+          addData(childData.name, childData.score);
+      });
+  });
+</script>
+</body>
+</html>

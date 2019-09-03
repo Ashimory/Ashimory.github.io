@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Challenge!</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Josefin+Sans|PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+    <header>
+            <div id="top_menu">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Challenges
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="earth_challenge.html">Earth Pollution: Challenge</a>
+                        <a class="dropdown-item" href="air_challenge.html">Air Pollution: Challenge</a>
+                        <a class="dropdown-item" href="water_challenge.html">Water Pollution: Challenge</a>
+                        <a class="dropdown-item" href="light_challenge.html">Light Pollution: Challenge</a>
+                        <a class="dropdown-item" href="noise_challenge.html">Noise Pollution: Challenge</a>
+                        <a class="dropdown-item" href="hangman.html">Final Challenge</a>
+                    </div>
+                </div>
+                <div class="page_name" onclick="returnHome()">Naked World</div>
+                <div class="account_manager">
+                    <a href="/firebaseWebLogin/index.html" class="account">Log In</a>
+                    <span>/</span>
+                    <a href="/signup/index.html" class="account">Sign Up</a>
+                </div>
+            </div>
+            <div class="page_menu">
+                <a href="earth_content.html" class="stage_name">Earth Pollution</a>
+                <a href="air_content.html" class="stage_name">Air Pollution</a>
+                <a href="water_content.html" class="stage_name">Water Pollution</a>
+                <a href="light_content.html" class="stage_name">Light Pollution</a>
+                <a href="noise_content.html" class="stage_name">Noise Pollution</a>
+                <a href="hangman.html" class="stage_name">Final Challenge</a>
+                <a href="/leaderboard/leaderboard.html" class="stage_name">Hall of Fame</a>
+            </div>
+    </header>
+    <h1 id="main-heading">Hangman!</h1>
+    <div style="text-align:center;">
+        <canvas id="display" width="600" height="300"></canvas>
+        <div id="playarea">
+        <p id="msg">Guess the word</p>
+        <button id="fire">Start</button>
+        <p id="theword">_</p>
+        <p id="letters">Choose a letter: <br/><br/>
+        <a value="a" href="javascript:void(0)">A</a>
+        <a value="b" href="javascript:void(0)">B</a>
+        <a value="c" href="javascript:void(0)">C</a>
+        <a value="d" href="javascript:void(0)">D</a>
+        <a value="e" href="javascript:void(0)">E</a>
+        <a value="f" href="javascript:void(0)">F</a>
+        <a value="g" href="javascript:void(0)">G</a>
+        <a value="h" href="javascript:void(0)">H</a>
+        <a value="i" href="javascript:void(0)">I</a>
+        <a value="j" href="javascript:void(0)">J</a>
+        <a value="k" href="javascript:void(0)">K</a>
+        <a value="l" href="javascript:void(0)">L</a>
+        <a value="m" href="javascript:void(0)">M</a>
+        <a value="n" href="javascript:void(0)">N</a>
+        <a value="o" href="javascript:void(0)">O</a>
+        <a value="p" href="javascript:void(0)">P</a>
+        <a value="q" href="javascript:void(0)">Q</a>
+        <a value="r" href="javascript:void(0)">R</a>
+        <a value="s" href="javascript:void(0)">S</a>
+        <a value="t" href="javascript:void(0)">T</a>
+        <a value="u" href="javascript:void(0)">U</a>
+        <a value="v" href="javascript:void(0)">V</a>
+        <a value="w" href="javascript:void(0)">W</a>
+        <a value="x" href="javascript:void(0)">X</a>
+        <a value="y" href="javascript:void(0)">Y</a>
+        <a value="z" href="javascript:void(0)">Z</a>
+        </p>
+        </div>  
+        </div>
+    <script src="return_home_page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="hangman.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+</body>
+</html>
