@@ -11,7 +11,7 @@ git add -A -f
 git commit -m 'deploy'
 
 
-git subtree push -u origin gh-pages
+git push -u origin gh-pages
 
 
 cd -
