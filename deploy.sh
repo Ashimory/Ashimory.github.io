@@ -7,10 +7,14 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+git init
+git checkout -b master
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:ashimory/ashimory.github.io.git master
+git remote add origin http://github.com/ashimory/ashimory.github.io.git
+
+git push git push -u origin master
 
 
 cd -
