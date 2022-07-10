@@ -25,12 +25,12 @@ const starbg = new THREE.TextureLoader().load('/galaxybackground.jpg');
 scene.background = starbg;
 
 // Add a sun
-const startt = new THREE.TextureLoader().load('/suntexturetest.jpg');
+const startt = new THREE.TextureLoader().load('/Blue_sun_map.png');
 const sungeo = new THREE.SphereGeometry( 15, 64, 64 );
 const sunmat = new THREE.MeshStandardMaterial( { 
   // color:0x000000,
   emissive: 0x71cee3, 
-  emissiveIntensity: 1,
+  emissiveIntensity: 0.64,
   map: startt,  } );
 const sunmesh = new THREE.Mesh( sungeo, sunmat );
 const sunlight = new THREE.PointLight(0xffffff, 2,);
