@@ -20,12 +20,18 @@ const controls = new OrbitControls(camera, renderer.domElement);
 const ambient = new THREE.AmbientLight(0xffffff);
 scene.add(ambient);
 
+// Add background 
+const starbg = new THREE.TextureLoader().load('galaxybackground.jpg');
+scene.background = starbg;
+
 // Add a sun
+const startt = new THREE.TextureLoader().load('suntexturetest.jpg');
 const sungeo = new THREE.SphereGeometry( 15, 64, 64 );
 const sunmat = new THREE.MeshStandardMaterial( { 
+  // color:0x000000,
   emissive: 0x71cee3, 
   emissiveIntensity: 1,
-  color:0x000000,} );
+  map: startt,  } );
 const sunmesh = new THREE.Mesh( sungeo, sunmat );
 const sunlight = new THREE.PointLight(0xffffff, 2,);
 const sun = sunlight.add(sunmesh);
@@ -67,7 +73,7 @@ function animate(){
 
   controls.update();
 
-  sun.rotation.z += 0.01;
+  sun.rotation.y += 0.001;
   console.log("working");
 
   renderer.render(scene, camera);
