@@ -74,7 +74,7 @@ function animate(){
   controls.update();
 
   sun.rotation.y += 0.001;
-  console.log("working");
+  // console.log("working");
 
   renderer.render(scene, camera);
 }
