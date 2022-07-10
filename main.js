@@ -21,11 +21,11 @@ const ambient = new THREE.AmbientLight(0xffffff);
 scene.add(ambient);
 
 // Add background 
-const starbg = new THREE.TextureLoader().load('galaxybackground.jpg');
+const starbg = new THREE.TextureLoader().load('/galaxybackground.jpg');
 scene.background = starbg;
 
 // Add a sun
-const startt = new THREE.TextureLoader().load('suntexturetest.jpg');
+const startt = new THREE.TextureLoader().load('/suntexturetest.jpg');
 const sungeo = new THREE.SphereGeometry( 15, 64, 64 );
 const sunmat = new THREE.MeshStandardMaterial( { 
   // color:0x000000,
