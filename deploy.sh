@@ -10,7 +10,6 @@ npm run build
 # git push origin master
 
 
-
 git add dist -f
 git commit -m 'deploy'
 git subtree push -f --prefix dist origin gh-pages
